@@ -15,7 +15,7 @@ public class JerseyExampleServletModule extends ServletModule {
     @Override
     protected void configureServlets() {
         filter("/*").through(ObjectifyFilter.class);
-        ObjectifyService.register(TodoList.class);
+//        ObjectifyService.register(TodoList.class);
         ObjectifyService.register(User.class);
     }
 }

@@ -20,6 +20,11 @@ public class TodoList {
     private Long id;
 
     private List<Item> items;
+    
+    
+     @JsonCreator
+    public TodoList () {}
+    
 
     @JsonCreator
     public TodoList(
